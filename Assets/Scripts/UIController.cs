@@ -8,24 +8,29 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class UIController : MonoBehaviour
 {
-    [SerializeField] private TMP_InputField nameInputField;    
+    [SerializeField] private TMP_InputField nameInputField;
+    [SerializeField] private Button playButton;
+
+    private void Update()
+    {
+        if(nameInputField.text.Length >= 3)
+        {
+            playButton.interactable = true;
+        } 
+        else
+        {
+            playButton.interactable = false;
+        }
+    }
 
     public void OnClickPlay()
     {
-        string petName = nameInputField.text;
-        if (string.IsNullOrWhiteSpace(petName))
-        {
-            Debug.LogWarning("No name entered!");
-            return;
-        }
-        else
-        {
-            PetController.Instance.CreatePet(petName);
-            SceneManager.LoadScene("VirtualPetGame");
-        }
+        PetController.Instance.CreatePet(nameInputField.text);
+        SceneManager.LoadScene("VirtualPetGame");
     }
 
     public void OnClickHow()

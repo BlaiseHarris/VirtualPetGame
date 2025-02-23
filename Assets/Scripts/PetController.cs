@@ -5,14 +5,15 @@
 //Instructor: Aurore Locklear
 //Date: 02/21/2025
 /////////////////////////////////////////////
-using TMPro;
+using System.Collections;
 using UnityEngine;
 
 public class PetController : MonoBehaviour
 {
-    public static PetController Instance { get; private set; }
-    public Pet CurrentPet { get; private set; }
-    [SerializeField] private TMP_Text resultText;
+    public static PetController Instance;
+    public Pet CurrentPet;
+    private float lastUpdateTime;
+    private bool timerStarted = false;
 
     private void Awake()
     {
@@ -27,44 +28,60 @@ public class PetController : MonoBehaviour
         }
     }
 
+
     public void CreatePet(string petName)
     {
         CurrentPet = new Pet(petName);
     }
 
-    public void OnClickPlayWith()
+    public void StartTimer()
+    {
+        StartCoroutine(UpdatePetStatsCoroutine());
+    }
+
+    private IEnumerator UpdatePetStatsCoroutine()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(10f);
+            CurrentPet.UpdateStats();
+        }
+    }
+
+
+    public string PlayWithPetResult()
     {
         if (CurrentPet.PlayWithPet())
         {
-            resultText.text = "You have successfully played with " + CurrentPet.Name;
+            return "You have successfully played with " + CurrentPet.Name;
         }
         else
         {
-            resultText.text = CurrentPet.Name + " is too tired to play.";
+            return CurrentPet.Name + " is too tired to play.";
         }
     }
 
-    public void OnClickFeed()
+    public string FeedPetResult()
     {
         if (CurrentPet.FeedPet())
         {
-            resultText.text = "You have successfully fed " + CurrentPet.Name;
+            return "You have successfully fed " + CurrentPet.Name;
         }
         else
         {
-            resultText.text = CurrentPet.Name + " is too full to eat anymore.";
+            return CurrentPet.Name + " is too full to eat anymore.";
         }
     }
 
-    public void OnClickRest()
+    public string RestpetResult()
     {
         if (CurrentPet.RestPet())
         {
-            resultText.text = CurrentPet.Name + " has successfully rested.";
+            return CurrentPet.Name + " has successfully rested.";
         }
         else
         {
-            resultText.text = CurrentPet.Name + " has too much energy to rest.";
+            return CurrentPet.Name + " has too much energy to rest.";
         }
     }
 }

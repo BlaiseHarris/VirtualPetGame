@@ -35,7 +35,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\PetController.cs",
               "ToolTip": "C:\\Users\\123so\\OneDrive\\Desktop\\GitHubClones\\VirtualPetGame\\Assets\\Scripts\\PetController.cs",
               "RelativeToolTip": "Assets\\Scripts\\PetController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-21T23:11:11.682Z",
               "EditorCaption": ""
@@ -62,8 +62,7 @@
               "RelativeToolTip": "..\\..\\2025 School Work\\CarClass-Harris\\Assets\\Script\\Car.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T18:36:27.196Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-21T18:36:27.196Z"
             },
             {
               "$type": "Document",
@@ -73,9 +72,10 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Pet.cs",
               "ToolTip": "C:\\Users\\123so\\OneDrive\\Desktop\\GitHubClones\\VirtualPetGame\\Assets\\Scripts\\Pet.cs",
               "RelativeToolTip": "Assets\\Scripts\\Pet.cs",
-              "ViewState": "AgIAAIMAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T18:24:30.57Z"
+              "WhenOpened": "2025-02-21T18:24:30.57Z",
+              "EditorCaption": ""
             }
           ]
         }
