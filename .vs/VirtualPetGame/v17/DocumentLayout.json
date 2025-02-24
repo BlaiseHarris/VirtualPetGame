@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\123so\\OneDrive\\Desktop\\GitHubClones\\VirtualPetGame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{28AC3452-F8D3-1A83-B450-794345F1C629}|Assembly-CSharp.csproj|c:\\users\\123so\\onedrive\\desktop\\githubclones\\virtualpetgame\\assets\\scripts\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28AC3452-F8D3-1A83-B450-794345F1C629}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{28AC3452-F8D3-1A83-B450-794345F1C629}|Assembly-CSharp.csproj|C:\\Users\\123so\\OneDrive\\Desktop\\GitHubClones\\VirtualPetGame\\assets\\scripts\\petcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{28AC3452-F8D3-1A83-B450-794345F1C629}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\petcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,6 +13,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{28AC3452-F8D3-1A83-B450-794345F1C629}|Assembly-CSharp.csproj|C:\\Users\\123so\\OneDrive\\Desktop\\GitHubClones\\VirtualPetGame\\assets\\scripts\\virtualpetgamecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{28AC3452-F8D3-1A83-B450-794345F1C629}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\virtualpetgamecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28AC3452-F8D3-1A83-B450-794345F1C629}|Assembly-CSharp.csproj|c:\\users\\123so\\onedrive\\desktop\\githubclones\\virtualpetgame\\assets\\scripts\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28AC3452-F8D3-1A83-B450-794345F1C629}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,50 +26,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "VirtualPetGameControl.cs",
               "DocumentMoniker": "C:\\Users\\123so\\OneDrive\\Desktop\\GitHubClones\\VirtualPetGame\\Assets\\Scripts\\VirtualPetGameControl.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\VirtualPetGameControl.cs",
               "ToolTip": "C:\\Users\\123so\\OneDrive\\Desktop\\GitHubClones\\VirtualPetGame\\Assets\\Scripts\\VirtualPetGameControl.cs",
               "RelativeToolTip": "Assets\\Scripts\\VirtualPetGameControl.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACIAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-23T07:52:04.879Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Pet.cs",
               "DocumentMoniker": "C:\\Users\\123so\\OneDrive\\Desktop\\GitHubClones\\VirtualPetGame\\Assets\\Scripts\\Pet.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Pet.cs",
               "ToolTip": "C:\\Users\\123so\\OneDrive\\Desktop\\GitHubClones\\VirtualPetGame\\Assets\\Scripts\\Pet.cs",
               "RelativeToolTip": "Assets\\Scripts\\Pet.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAIwBUAAACFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAACFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-21T18:24:30.57Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "PetController.cs",
               "DocumentMoniker": "C:\\Users\\123so\\OneDrive\\Desktop\\GitHubClones\\VirtualPetGame\\Assets\\Scripts\\PetController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PetController.cs",
               "ToolTip": "C:\\Users\\123so\\OneDrive\\Desktop\\GitHubClones\\VirtualPetGame\\Assets\\Scripts\\PetController.cs",
               "RelativeToolTip": "Assets\\Scripts\\PetController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwCMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-21T23:11:11.682Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "UIController.cs",
               "DocumentMoniker": "C:\\Users\\123so\\OneDrive\\Desktop\\GitHubClones\\VirtualPetGame\\Assets\\Scripts\\UIController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UIController.cs",
