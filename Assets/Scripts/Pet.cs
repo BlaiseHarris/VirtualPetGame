@@ -5,6 +5,7 @@
 //Instructor: Aurore Locklear
 //Date: 02/21/2025
 /////////////////////////////////////////////
+
 using UnityEngine;
 
 /// <summary>
@@ -18,7 +19,7 @@ public class Pet
     private int tiredness;
 
     /// <summary>
-    /// Constructor for a pet instance. Takes a name and the rest of the stats are predeterminedm i.e. fullness, happiness, and tiredness
+    /// Constructor for a pet instance. Takes a name and the rest of the stats are predetermined: fullness, happiness, and tiredness.
     /// </summary>
     public Pet(string name)
     {
@@ -121,15 +122,21 @@ public class Pet
         }
     }
 
+    // The interactions below return bools, to alert the pet controller whether the actions succeeds
+
     /// <summary>
-    /// Updates the stats for the pet when it has been fed. This adds 4 to the fullness and 2 to happiness.
+    /// Updates the stats for the pet when it has been fed. This adds 4 to the fullness and 2 to happiness if fullness less than 6.
     /// </summary>
     public bool FeedPet()
     {
-        if (this.fullness <= 10)
+        if (this.fullness < 10) 
         {
             this.fullness += 4;
-            this.happiness += 2;
+
+            if (this.fullness < 6)
+            {
+                this.happiness += 2;
+            }
 
             if (this.fullness > 10)
             {
@@ -146,7 +153,7 @@ public class Pet
     }
 
     /// <summary>
-    /// Updates the stats for the pet when he plays. This adds 4 to the happiness if fullness is above 5. Otherwise, 2 to happiness if pet is not too tired. For both succesful play dates paths tiredness goes down by two.
+    /// Updates the stats for the pet when he plays. This adds 4 to the happiness if fullness is above 5. Otherwise, 2 to happiness if pet is not above 4 on the tired stat. For both succesful play dates paths tiredness goes down by 2.
     /// </summary>
     public bool PlayWithPet()
     {
@@ -173,7 +180,7 @@ public class Pet
     /// </summary>
     public bool RestPet()
     {
-        if(this.tiredness <= 5)
+        if(this.tiredness >= 6)
         {
             this.tiredness -= 10;
             this.happiness += 2;

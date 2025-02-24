@@ -5,19 +5,25 @@
 //Instructor: Aurore Locklear
 //Date: 02/21/2025
 /////////////////////////////////////////////
+
 using System.Collections;
 using UnityEngine;
 
+/// <summary>
+/// Controls the virtual pet's behaviors and manages game logic related to the pet.
+/// Implements the Singleton.
+/// </summary>
 public class PetController : MonoBehaviour
 {
+    /// <summary>
+    /// Singleton instance of PetController.
+    /// </summary>
     public static PetController Instance;
-    public Pet CurrentPet;
-    private float lastUpdateTime;
-    private bool timerStarted = false;
+    public Pet CurrentPet; // Current adopted pet
 
     private void Awake()
     {
-        if (Instance != null && Instance != this)
+        if (Instance != null && Instance != this) // Initializes singleton instance if one is not found
         {
             Destroy(this.gameObject);
         }
@@ -28,17 +34,25 @@ public class PetController : MonoBehaviour
         }
     }
 
-
+    /// <summary>
+    /// Creates a new pet with the given name.
+    /// </summary>
     public void CreatePet(string petName)
     {
         CurrentPet = new Pet(petName);
     }
 
+    /// <summary>
+    /// Starts the coroutine that periodically updates the stats.
+    /// </summary>
     public void StartTimer()
     {
         StartCoroutine(UpdatePetStatsCoroutine());
     }
 
+    /// <summary>
+    /// Coroutine that updates the stats every 10 seconds.
+    /// </summary>
     private IEnumerator UpdatePetStatsCoroutine()
     {
         while (true)
@@ -48,7 +62,11 @@ public class PetController : MonoBehaviour
         }
     }
 
-
+    // The three methods below take the bool that the pet class returns to determine what response to give to the game UI to update the player
+    
+    /// <summary>
+    /// Handles the play action for the pet and returns a result message.
+    /// </summary>
     public string PlayWithPetResult()
     {
         if (CurrentPet.PlayWithPet())
@@ -61,6 +79,9 @@ public class PetController : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Handles the feeding action for the pet and returns a result message.
+    /// </summary>
     public string FeedPetResult()
     {
         if (CurrentPet.FeedPet())
@@ -73,6 +94,9 @@ public class PetController : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Handles the rest action for the pet and returns a result message.
+    /// </summary>
     public string RestpetResult()
     {
         if (CurrentPet.RestPet())
@@ -84,4 +108,13 @@ public class PetController : MonoBehaviour
             return CurrentPet.Name + " has too much energy to rest.";
         }
     }
+
+    /// <summary>
+    /// Resets the singleton instance of PetController for play again functionality.
+    /// </summary>
+    public static void ResetSingleton()
+    {
+        Destroy(Instance.gameObject);        
+    }
+
 }
